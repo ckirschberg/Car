@@ -8,4 +8,9 @@ public class Engine {
         this.displacement = displacement;
         numberOfCylinders = cylinders;
     }
+
+    public String toString() {
+        return " horsepower: " + horsepower + " displayment" + displacement +
+                " numberOfCyl " + numberOfCylinders;
+    }
 }

@@ -9,6 +9,8 @@ public class Main {
         System.out.println(mustang);
 
         Car c1 = new Car();
+        Engine slow = new Engine(45, 1.0, 3);
+        c1.setEngine(slow);
         c1.setColor("Blue");
         c1.setBrand("Honda");
         c1.setNumberOfSeats(4);
@@ -38,6 +40,8 @@ public class Main {
 
 
         Car mercedes = new Car();
+        Engine e1 = new Engine(200, 3, 6);
+        mercedes.setEngine(e1);
         mercedes.setColor("Black");
         mercedes.brand = "Mercedes";
         mercedes.numberOfSeats = 7;
@@ -46,6 +50,17 @@ public class Main {
 
         System.out.println("Is the mercedes working? " + mercedes.isWorking);
         System.out.println(mercedes);
+
+        CarDealer dealer1 = new CarDealer("Zaland's special cars");
+        dealer1.addCar(mustang);
+        dealer1.addCar(mercedes);
+        dealer1.addCar(c1);
+
+        dealer1.printCars();
+        dealer1.printCarsOfColor("black");
+
+
+
 
 
 

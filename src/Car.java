@@ -76,7 +76,9 @@ public class Car {
 
     // Overwriting the toString method.
     public String toString(){
-        return "Brand: " + getColor() + " color: " + color + " seats: " + numberOfSeats + " acceleration: " + acceleration + " horsepower: ";
+        return "Brand: " + brand + " color: " + color + " seats: " +
+                numberOfSeats + " acceleration: " + acceleration + " horsepower: " +
+                engine.toString();
     }
 
 
