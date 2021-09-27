@@ -60,11 +60,51 @@ public class Main {
         dealer1.printCarsOfColor("black");
 
 
+        int[] numbers = new int[3];
+        numbers[0] = 1;
+        numbers[1] = 2;
+        numbers[2] = 4;
+        System.out.println("---------------");
+        for(int i=0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
 
 
+        Car[] cars = new Car[2];
+        cars[0] = new Car("Black", "Citroen");
+        cars[1] = new Car("Red", "Ferrari");
+        System.out.println(cars[0].getColor());
+        for(int i=0; i < cars.length; i++) {
+            System.out.println(cars[i].getColor());
+        }
 
+        MyMath myMath1 = new MyMath();
+        MyMath myMath2 = new MyMath();
+        System.out.println("result of 1+2: " +
+                MyMath.add(1,2));
 
+        System.out.println(myMath1.add(1,2));
+        System.out.println(myMath1.a);
 
+        myMath1.a = 2;
+        System.out.println(myMath2.a);
+
+        System.out.println(MyMath.add(1.5, 1.3));
+
+        int[][] numbersIn2Dim = new int[2][3];
+        numbersIn2Dim[0][0] = 1;
+        numbersIn2Dim[0][1] = 2;
+        numbersIn2Dim[0][2] = 3;
+
+        numbersIn2Dim[1][0] = 4;
+        numbersIn2Dim[1][1] = 5;
+        numbersIn2Dim[1][2] = 6;
+
+        for(int i=0; i < numbersIn2Dim.length; i++) {
+            for(int j=0; j < numbersIn2Dim[i].length; j++) {
+                System.out.println(numbersIn2Dim[i][j]);
+            }
+        }
 
 
 
