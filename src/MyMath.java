@@ -1,5 +1,5 @@
 public class MyMath {
-    public static int a=0;
+    public int a=0;
 
     // Overloaded method, multiple methods with the
     // same name, but different parameters.

@@ -87,6 +87,7 @@ public class Main {
         System.out.println(myMath1.a);
 
         myMath1.a = 2;
+
         System.out.println(myMath2.a);
 
         System.out.println(MyMath.add(1.5, 1.3));
@@ -105,8 +106,6 @@ public class Main {
                 System.out.println(numbersIn2Dim[i][j]);
             }
         }
-
-
 
     }
 }
