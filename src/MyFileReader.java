@@ -3,6 +3,11 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class MyFileReader {
+    public static void main(String[] args) {
+        MyFileReader fileReader = new MyFileReader();
+        fileReader.openFile("/Users/christiankirschberg/IdeaProjects/Car/src/filename.txt");
+    }
+
     private Scanner input;
 
     public Boolean openFile(String filename)
