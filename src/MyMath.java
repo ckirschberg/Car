@@ -4,9 +4,11 @@ public class MyMath {
     // Overloaded method, multiple methods with the
     // same name, but different parameters.
     public static int add(int a, int b) {
+
         return a+b;
     }
     public static double add(double a, double b) {
+
         return a+b;
     }
 
