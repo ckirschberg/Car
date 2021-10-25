@@ -1,3 +1,7 @@
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -58,6 +62,31 @@ public class Main {
 
         dealer1.printCars();
         dealer1.printCarsOfColor("black");
+
+        // Serializing
+        // https://www.tutorialspoint.com/java/java_serialization.htm
+        try {
+            FileOutputStream fileOut = new FileOutputStream("carDealer.ser");
+            ObjectOutputStream out = new ObjectOutputStream(fileOut);
+            out.writeObject(dealer1);
+            out.close();
+            fileOut.close();
+            System.out.printf("Serialized data is saved in carDealer.ser");
+        } catch (IOException i) {
+            System.out.println("error!");
+            i.printStackTrace();
+        }
+
+
+
+
+
+
+
+
+
+
+
 
 
         int[] numbers = new int[3];

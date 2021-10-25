@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class CarDealer {
+public class CarDealer implements java.io.Serializable {
     private String name;
     private ArrayList<Car> carsForSale = new ArrayList<Car>();
 

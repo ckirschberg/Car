@@ -1,4 +1,6 @@
-public class Engine {
+import java.io.Serializable;
+
+public class Engine implements Serializable {
     private int horsepower;
     private double displacement;
     private int numberOfCylinders;

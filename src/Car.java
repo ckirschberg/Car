@@ -1,5 +1,7 @@
+import java.io.Serializable;
+
 // Car in singular form.
-public class Car {
+public class Car implements Serializable {
     // Attribute, field, instance variable, etc.
     private String color;
     String brand;
