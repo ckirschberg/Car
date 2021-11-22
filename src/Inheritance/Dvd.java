@@ -11,6 +11,8 @@ public class Dvd extends Media {
         super(title, length);
         this.director = director;
     }
+
+    @Override
     public void play() {
         System.out.println("Now playing " + title + " for " + length + " with " + director);
     }
