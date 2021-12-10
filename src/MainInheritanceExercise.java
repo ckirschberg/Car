@@ -21,5 +21,15 @@ public class MainInheritanceExercise {
             car.drive();
         }
 
+        int number = 0;
+        do {
+            System.out.println("Nayeem " + number);
+            number++;
+        } while (number < 6);
+
+
+
+
+
     }
 }
